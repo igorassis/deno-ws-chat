@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deno Server</title>
+</head>
+<body onload="insertPort()">
+    Server is UP and RUNNING on port <span id="port"></span>
+</body>
+<script>
+    function insertPort() {
+        let port = window.location.port;
+        const p = document.getElementById("port");
+        p.innerHTML = port;
+    };
+</script>
+</html>
